@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Style pour les écrans de taille moyenne à grande */
+@media (min-width: 992px) {
+    .fondBlanc {
+        min-height: 150vh;
+        padding: 20px;
+    }
+    .fond {
+        min-height: calc(100vh - 200px); /* Ajustez cette valeur en fonction de la hauteur de votre menu */
+        padding: 100px 0; /* Ajustez cette valeur en fonction de la hauteur de votre menu */
+    }
+}
+
+@media(max-width:991px) {
+
+    .home-section {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .content-wrapper .acheter {
+        margin-top: 10px; /* Ajoute de l'espace au-dessus du bouton */
+        padding: 10px 20px; /* Ajuste le padding du bouton pour les petits écrans */
+        font-size: 1rem; /* Réduit la taille de la police du bouton pour les petits écrans */
+        white-space: nowrap; /* Empêche le texte de se casser en plusieurs lignes */
+        width: auto;
+        max-width: 100%;
+
+    }
+
+    #image img {
+        width: 100%; /* Assure que l'image prend toute la largeur disponible */
+        height: auto; /* Maintient le ratio d'aspect de l'image */
+    }
+    .content-wrapper {
+        margin-top: 20px; /* Ajoute de l'espace au-dessus du texte */
+    }
+
+    .content-wrapper h1, .content-wrapper h3 {
+        font-size: 1.5rem; /* Réduit la taille de la police pour les petits écrans */
+    }
+
+    .content-wrapper .highlight-text {
+        background-color: red;
+        padding: 0 5px; /* Ajoute du padding pour améliorer la lisibilité */
+    }
+    .cadre {
+        width: 90vw; /* Réduit la largeur du cadre pour les petits écrans */
+        max-height: 65vh; /* Limite la hauteur maximale du cadre */
+        overflow: hidden; /* Cache le texte qui dépasse pour éviter la barre de défilement */
+    }
+    .cadre p {
+        font-size: 5px; /* Taille de police encore réduite pour les petits écrans */
+    }
+    .fondBlanc {
+        padding: 10px;
+        margin-top: 80px; /* Ajustez cette valeur selon la hauteur de votre menu */
+        margin-bottom: 80px; /* Ajustez cette valeur si nécessaire */
+    }
+    .fond {
+        min-height: calc(100vh - 160px); /* Ajustez cette valeur en fonction de la hauteur de votre menu */
+        padding: 80px 0; /* Ajustez cette valeur en fonction de la hauteur de votre menu */
+    }
+    .card {
+        margin-bottom: 20px;
+        height: auto;
+        width: auto;
+    }
+
+    .card-body {
+        text-align: center;
+    }
+
+    .card img {
+        height: 150px;
+        object-fit: cover;
+    }
+
+    .btn {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+}
+/* Ajustement pour les très petits écrans */
+@media (max-width: 576px) {
+    .card {
+        width: 70%; /* Réduit la largeur des cartes pour les écrans de téléphone */
+        max-width: 300px; /* Limite la largeur maximale des cartes */
+        margin: 0 auto 20px auto; /* Centre les cartes et ajoute un espacement en dessous */
+    }
+
+    .card img {
+        height: auto; /* Réinitialise la hauteur des images pour s'adapter à la largeur de la carte */
+        width: 100%; /* Assure que l'image prend toute la largeur disponible */
+        object-fit: cover; /* Garantit que l'image couvre la carte sans être déformée */
+    }
+
+
+    .fondBlanc {
+        background-color: white;
+        height: 300vh;
+        width: 100%;
+        border-radius: 20px;
+        padding: 10px; /* Ajuster selon vos besoins */
+        margin-top: 150vh; /* Ajoute de la marge en bas pour séparer du menu */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-wrap: wrap;
+        overflow-y: auto;
+    }
+
+    .fond{
+        background-color: #41388d;
+        height: 180vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    footer{
+        margin-top: 80px;
+    }
+    .pied{
+        height: 30vh;
+        background-color: #41388d;
+        margin-top: 50vh;
+    }
+    .cadre{
+        width: 100vw;
+    }
+    .helped{
+        display: none;
+    }
+}
+
+
+
+
+
+.cadre {
+    background-color: white;
+    width: 50vw;
+    border-radius: 35px;
+   text-align: center;
+    padding: 20px; /* Ajoute de la marge à l'intérieur du cadre pour l'espace autour du texte */
+}
+
+.cadre p {
+    font-size: 18px; /* Taille de police réduite */
+    font-weight: 500; /* Poids de la police légèrement réduit */
+    color: slateblue;
+    margin: 0; /* Supprime les marges pour s'assurer que le texte est bien contenu */
+    text-align: justify; /* Justifie le texte pour une meilleure lisibilité */
+}
+
+.cadre p span {
+    color: #c91719;
+}
+
+#recherche{
+    border: none;
+    background-color: rgba(211, 211, 211, 0.876);
+}
+#search{
+    border: none;
+    background-color: #c91719;
+}
+.categorie{
+    background-color:#c91719 ;
+    border: none;
+    border-radius: 10px;
+}
+.categorie button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 180px;
+    height: 50px;
+    border: none;
+    color: white;
+    font-size: 18px;
+}
+.connexion{
+    border: 2px solid;
+    border-color: rgba(10, 9, 9, 0.483);
+    border-radius: 5px;
+}
+.connexion a{
+    color: black;
+    font-weight: 600;
+}
+.help{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    width: 50px;
+    background-color: #c91719;
+
+}
+
+.contenu1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(218, 194, 249, 0.509);
+}
+#texte h1{
+    font-size: 56px;
+    font-weight: bold;
+}
+#texte h3{
+    font-size: 50px;
+    font-weight: bold;
+}
+#texte{
+    margin-top: 80px;
+}
+#menu{
+font-weight: 600;
+}
+
+.acheter{
+    border: none;
+    background-color: #c91719;
+    border-radius: 20px;
+    height: 5vh;
+    width: 18vw;
+    color: white;
+    font-size: 25px;
+    font-weight: bolder;
+    margin-top: 150px;
+}
+
+.fond{
+    background-color: #41388d;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.fondBlanc {
+    background-color: white;
+    width: 100%;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.helped{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    background-color: #c91719;
+
+}
+.pied{
+    height: 30vh;
+    background-color: #41388d;
+}
